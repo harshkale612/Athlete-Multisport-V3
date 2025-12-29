@@ -28,7 +28,7 @@ const HomeHero = () => {
             <div className="absolute inset-0 lg:hidden z-0">
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10" />
                 <img
-                    src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop"
+                    src="https://plus.unsplash.com/premium_photo-1661681770748-4d18c9f4a661?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fE1lbiUyMEF0aGxldHxlbnwwfHwwfHx8MA%3D%3D"
                     alt="Athlete Portrait"
                     className="w-full h-full object-cover opacity-50"
                 />
@@ -162,7 +162,7 @@ const HomeHero = () => {
                         <div className="absolute inset-0 z-10 bg-gradient-to-t from-background via-transparent to-transparent" />
 
                         <img
-                            src="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=1470&auto=format&fit=crop"
+                            src="https://plus.unsplash.com/premium_photo-1661681770748-4d18c9f4a661?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8ODh8fE1lbiUyMEF0aGxldHxlbnwwfHwwfHx8MA%3D%3D"
                             alt="Athlete Dynamic Pose"
                             className="w-full h-full object-cover object-center"
                         />
