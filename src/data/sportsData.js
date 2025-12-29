@@ -68,7 +68,7 @@ export const sportsData = [
             { label: "PPG", value: "15.2" },
             { label: "Assists", value: "6.5" }
         ],
-        image: "https://images.unsplash.com/photo-1519861531473-920026393112?auto=format&fit=crop&q=80&w=1000",
+        image: "https://images.unsplash.com/photo-1608245449230-4ac19066d2d0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8YmFza2V0YmFsbHxlbnwwfHwwfHx8MA%3D%3D",
         imageAlt: "Basketball player taking a jump shot on a dimly lit court."
     },
     {
