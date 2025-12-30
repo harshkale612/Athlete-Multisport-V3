@@ -4,7 +4,6 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { athleteProfile } from '../../data/athleteProfile';
 import { sportsData } from '../../data/sportsData';
 import { motion, AnimatePresence, useScroll, useTransform } from 'framer-motion';
-import ThemeSwitcher from '../common/ThemeSwitcher';
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -165,13 +164,10 @@ const Navbar = () => {
                         </AnimatePresence>
                     </div>
 
-                    <div className="w-px h-6 bg-border mx-2" />
-                    <ThemeSwitcher />
                 </div>
 
                 {/* Mobile Toggle */}
                 <div className="lg:hidden flex items-center gap-3">
-                    <ThemeSwitcher />
                     <motion.button
                         onClick={() => setIsOpen(!isOpen)}
                         className="p-2 text-text hover:text-primary transition-colors rounded-full hover:bg-surface/30"
