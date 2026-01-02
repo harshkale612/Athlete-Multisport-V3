@@ -23,7 +23,7 @@ export const cricketConfig = {
     timeline: cricketTimeline,
     training: cricketTraining,
     media: [
-        { type: 'image', src: 'https://images.unsplash.com/photo-1531415074968-0dc416345853?auto=format&fit=crop&q=80&w=1000', alt: 'Cricket Batting' },
-        { type: 'image', src: 'https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?auto=format&fit=crop&q=80&w=1000', alt: 'Cricket Field' }
+        { type: 'image', src: 'https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972', alt: 'Cricket Field' },
+        { type: 'image', src: 'https://images.unsplash.com/photo-1531415074968-0dc416345853', alt: 'Cricket Batting' }
     ]
 };

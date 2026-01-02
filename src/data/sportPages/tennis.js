@@ -48,7 +48,7 @@ export const tennisConfig = {
         }
     ],
     media: [
-        { type: 'image', src: 'https://images.unsplash.com/photo-1595435934249-fd96316cd29a?auto=format&fit=crop&q=80&w=1000', alt: 'Tennis Racket' },
-        { type: 'image', src: 'https://images.unsplash.com/photo-1622279457486-62dcc4a431d6?auto=format&fit=crop&q=80&w=1000', alt: 'Tennis Court' }
+        { type: 'image', src: 'https://images.unsplash.com/photo-1622279457486-62dcc4a431d6', alt: 'Tennis Court' },
+        { type: 'image', src: 'https://images.unsplash.com/photo-1595435934249-fd96316cd29a', alt: 'Tennis Racket' }
     ]
 };

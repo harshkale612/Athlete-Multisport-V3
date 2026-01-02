@@ -48,7 +48,7 @@ export const basketballConfig = {
         }
     ],
     media: [
-        { type: 'image', src: 'https://images.unsplash.com/photo-1546519638-68e109498ee2?auto=format&fit=crop&q=80&w=1000', alt: 'Basketball Hoop' },
-        { type: 'image', src: 'https://images.unsplash.com/photo-1519861531473-92002639313a?auto=format&fit=crop&q=80&w=1000', alt: 'Basketball Action' }
+        { type: 'image', src: 'https://images.unsplash.com/photo-1519861531473-92002639313a', alt: 'Basketball Action' },
+        { type: 'image', src: 'https://images.unsplash.com/photo-1546519638-68e109498ee2', alt: 'Basketball Hoop' }
     ]
 };

@@ -64,6 +64,9 @@ const SportGallery = ({ config }) => {
                                 src={item.src || item.url}
                                 alt={item.alt || `Gallery image ${index + 1}`}
                                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                                onError={(e) => {
+                                    e.target.src = 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1000';
+                                }}
                             />
                             <div 
                                 className="absolute inset-0 opacity-0 group-hover:opacity-20 transition-opacity duration-300"

@@ -28,7 +28,7 @@ const HomeHero = () => {
             <div className="absolute inset-0 lg:hidden z-0">
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent z-10" />
                 <img
-                    src="https://images.unsplash.com/photo-1618517048289-4646902edaf5?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    src="https://media.istockphoto.com/id/470643888/photo/african-athlete-smiling-positively-after-a-good-training-session.jpg?s=612x612&w=0&k=20&c=mqEfE46hO8GMxoczsmFeOAUeK02s8g3wAfCX0Bx26-I="
                     alt="Athlete Portrait"
                     className="w-full h-full object-cover opacity-50"
                 />
@@ -162,7 +162,7 @@ const HomeHero = () => {
                         <div className="absolute inset-0 z-10 bg-gradient-to-t from-background via-transparent to-transparent" />
 
                         <img
-                            src="https://images.unsplash.com/photo-1618517048289-4646902edaf5?q=80&w=387&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                            src="https://media.istockphoto.com/id/470643888/photo/african-athlete-smiling-positively-after-a-good-training-session.jpg?s=612x612&w=0&k=20&c=mqEfE46hO8GMxoczsmFeOAUeK02s8g3wAfCX0Bx26-I="
                             alt="Athlete Dynamic Pose"
                             className="w-full h-full object-cover object-center"
                         />
