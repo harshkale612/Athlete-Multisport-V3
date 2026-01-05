@@ -172,20 +172,23 @@ const HomeHero = () => {
                 {/* ==============================================
                     QR CODE (Bottom Right Corner)
                     ============================================== */}
+                {/* ==============================================
+                    QR CODE (Responsive Placement)
+                    ============================================== */}
                 <motion.div
                     initial={{ opacity: 0, scale: 0.8 }}
                     animate={{ opacity: 1, scale: 1 }}
                     transition={{ duration: 0.8, delay: 1.2 }}
-                    className="absolute bottom-8 right-8 z-20 flex flex-col items-center gap-2"
+                    className="relative mt-8 lg:mt-0 lg:absolute lg:bottom-8 lg:right-8 z-20 flex flex-col items-center gap-3 p-4 rounded-2xl bg-surface/5 backdrop-blur-md border border-white/10 hover:bg-surface/10 transition-colors duration-300"
                 >
-                    <div className="w-32 h-32 bg-white p-3 rounded-lg shadow-2xl border border-white/20 backdrop-blur-sm">
+                    <div className="w-24 h-24 lg:w-32 lg:h-32 bg-white p-2 rounded-xl shadow-lg">
                         <img
                             src="https://api.qrserver.com/v1/create-qr-code/?size=128x128&data=https://example.com"
-                            alt="QR Code"
+                            alt="Scan to Connect"
                             className="w-full h-full object-contain"
                         />
                     </div>
-                    <span className="text-xs font-mono text-text-muted uppercase tracking-wider">
+                    <span className="text-[10px] lg:text-xs font-mono text-text-muted uppercase tracking-widest">
                         Scan to Connect
                     </span>
                 </motion.div>
