@@ -26,17 +26,17 @@ const SportHero = ({ config }) => {
         <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-background pt-20">
             {/* Background with Sport Accent */}
             <div className="absolute inset-0 z-0">
-                <div 
+                <div
                     className="absolute inset-0 opacity-10"
                     style={{ backgroundColor: accentColorHex }}
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
-                
+
                 {/* Animated gradient orb */}
                 <motion.div
                     className="absolute top-1/2 right-1/4 w-[600px] h-[600px] rounded-full blur-3xl"
                     style={{ backgroundColor: accentColorHex }}
-                    animate={{ 
+                    animate={{
                         scale: [1, 1.2, 1],
                         opacity: [0.1, 0.2, 0.1]
                     }}
@@ -49,7 +49,7 @@ const SportHero = ({ config }) => {
                 {/* Left: Text Content */}
                 <motion.div
                     style={{ y: yText, opacity }}
-                    className="space-y-6 md:space-y-8 text-center lg:text-left"
+                    className="relative z-20 space-y-6 md:space-y-8 text-center lg:text-left"
                 >
                     {/* Sport Label */}
                     <motion.div
@@ -58,17 +58,17 @@ const SportHero = ({ config }) => {
                         transition={{ duration: 0.6 }}
                         className="flex items-center justify-center lg:justify-start gap-3"
                     >
-                        <div 
+                        <div
                             className="h-px w-12 md:w-20 rounded-full"
                             style={{ backgroundColor: accentColorHex }}
                         />
-                        <span 
+                        <span
                             className="text-xs md:text-sm font-bold uppercase tracking-widest"
                             style={{ color: accentColorHex }}
                         >
                             {sportName}
                         </span>
-                        <div 
+                        <div
                             className="h-px w-12 md:w-20 rounded-full"
                             style={{ backgroundColor: accentColorHex }}
                         />
@@ -115,7 +115,7 @@ const SportHero = ({ config }) => {
                     >
                         {heroHighlights?.map((stat, index) => (
                             <div key={index} className="flex flex-col items-center lg:items-start">
-                                <span 
+                                <span
                                     className="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-1"
                                     style={{ color: accentColorHex }}
                                 >
@@ -132,7 +132,7 @@ const SportHero = ({ config }) => {
                 {/* Right: Player Image */}
                 <motion.div
                     style={{ y: yImage, opacity }}
-                    className="relative w-full h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden order-first lg:order-last"
+                    className="relative w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-2xl overflow-hidden order-first lg:order-last"
                 >
                     {/* Player Image - NOT boxed, full bleed */}
                     <motion.img
@@ -149,7 +149,7 @@ const SportHero = ({ config }) => {
                     <div className="absolute inset-0 bg-gradient-to-r from-background/80 via-transparent to-transparent opacity-0 lg:opacity-100" />
 
                     {/* Sport Accent Overlay */}
-                    <div 
+                    <div
                         className="absolute inset-0 mix-blend-overlay opacity-20"
                         style={{ backgroundColor: accentColorHex }}
                     />
