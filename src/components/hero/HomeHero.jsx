@@ -45,7 +45,7 @@ const HomeHero = () => {
                 <div className="absolute top-[-20%] left-[-10%] w-[800px] h-[800px] bg-primary/10 rounded-full blur-[150px]" />
             </div>
 
-            <div className="container-custom relative z-10 w-full h-full flex flex-col lg:flex-row items-center lg:justify-between pt-20 lg:pt-0">
+            <div className="container-custom relative z-10 w-full h-full flex flex-col lg:flex-row items-center lg:justify-between pt-24 md:pt-28 lg:pt-32">
 
                 {/* ==============================================
                     LEFT CONTENT (Text & CTA)
@@ -167,6 +167,27 @@ const HomeHero = () => {
                             className="w-full h-full object-cover object-center"
                         />
                     </div>
+                </motion.div>
+
+                {/* ==============================================
+                    QR CODE (Bottom Right Corner)
+                    ============================================== */}
+                <motion.div
+                    initial={{ opacity: 0, scale: 0.8 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ duration: 0.8, delay: 1.2 }}
+                    className="absolute bottom-8 right-8 z-20 flex flex-col items-center gap-2"
+                >
+                    <div className="w-32 h-32 bg-white p-3 rounded-lg shadow-2xl border border-white/20 backdrop-blur-sm">
+                        <img
+                            src="https://api.qrserver.com/v1/create-qr-code/?size=128x128&data=https://example.com"
+                            alt="QR Code"
+                            className="w-full h-full object-contain"
+                        />
+                    </div>
+                    <span className="text-xs font-mono text-text-muted uppercase tracking-wider">
+                        Scan to Connect
+                    </span>
                 </motion.div>
 
             </div>

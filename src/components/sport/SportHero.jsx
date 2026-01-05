@@ -16,8 +16,11 @@ const SportHero = ({ config }) => {
     const yImage = useTransform(scrollY, [0, 500], [0, 50]);
     const opacity = useTransform(scrollY, [0, 400], [1, 0]);
 
-    // Player image placeholder - in production, use actual sport-specific images
-    const PLAYER_IMAGE = "https://images.unsplash.com/photo-1618517048289-4646902edaf5?fm=jpg&q=60&w=2000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
+    // Player image - prefer config-specific image, then sportsData image, then fallback
+    const primaryMediaImage = config?.media?.find?.((item) => item.type === 'image')?.src;
+    const PLAYER_IMAGE = primaryMediaImage
+        || sportInfo?.image
+        || "https://images.unsplash.com/photo-1618517048289-4646902edaf5?fm=jpg&q=60&w=2000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
     return (
         <section className="relative min-h-screen w-full flex items-center justify-center overflow-hidden bg-background pt-20">
