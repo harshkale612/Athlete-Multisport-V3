@@ -2,6 +2,7 @@ import React from 'react';
 import HomeHero from '../components/hero/HomeHero';
 import AboutSection from '../components/about/AboutSection';
 import SportsOverview from '../components/sports/SportsOverview';
+import YouInSportsPostsSection from '../components/youinsports/YouInSportsPostsSection';
 import PhilosophySection from '../components/philosophy/PhilosophySection';
 import CTASection from '../components/cta/CTASection';
 
@@ -17,10 +18,13 @@ const Home = () => {
             {/* 3. Sports Overview - Interactive sport selector/cards */}
             <SportsOverview />
 
-            {/* 4. Philosophy / Path Overview - Short narrative */}
+            {/* 4. YouInSports Posts - Recent updates and achievements */}
+            <YouInSportsPostsSection />
+
+            {/* 5. Philosophy / Path Overview - Short narrative */}
             <PhilosophySection />
 
-            {/* 5. Call to Action - Explore sports / journey / contact */}
+            {/* 6. Call to Action - Explore sports / journey / contact */}
             <CTASection />
         </div>
     );
