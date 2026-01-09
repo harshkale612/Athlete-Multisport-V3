@@ -17,8 +17,8 @@ const YouInSportsPostsSection = () => {
     // For now, assume user is NOT logged in
     const isLoggedIn = false;
 
-    // Show only 3-4 recent posts publicly
-    const publicPosts = youinsportsPosts.slice(0, 4);
+    // Show 12 recent posts publicly
+    const publicPosts = youinsportsPosts.slice(0, 12);
 
     // TODO: Replace with real YouInSports login URL if different path
     const youinsportsLoginUrl = 'https://www.uinsports.com/login';
@@ -64,15 +64,18 @@ const YouInSportsPostsSection = () => {
                     </p>
                 </motion.div>
 
-                {/* Posts Grid */}
-                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 mb-12">
-                    {publicPosts.map((post, index) => (
-                        <YouInSportsPostCard
-                            key={post.id}
-                            post={post}
-                            index={index}
-                        />
-                    ))}
+                {/* Instagram-style Puzzle Grid */}
+                <div className="relative max-w-4xl mx-auto mb-12">
+                    <div className="grid grid-cols-3 gap-0 border-2 border-white rounded-lg overflow-hidden shadow-2xl">
+                        {publicPosts.map((post, index) => (
+                            <YouInSportsPostCard
+                                key={post.id}
+                                post={post}
+                                index={index}
+                                isPuzzleGrid={true}
+                            />
+                        ))}
+                    </div>
                 </div>
 
                 {/* CTA Button */}

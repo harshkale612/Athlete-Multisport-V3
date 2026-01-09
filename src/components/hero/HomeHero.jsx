@@ -191,6 +191,20 @@ const HomeHero = () => {
                     <span className="text-[10px] lg:text-xs font-mono text-text-muted uppercase tracking-widest">
                         Scan to Connect
                     </span>
+                    
+                    {/* YouInSports Login Button */}
+                    <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={() => window.open('https://www.uinsports.com/login', '_blank')}
+                        className="relative px-4 py-2 bg-gradient-to-r from-primary to-primary/80 text-white text-xs font-bold uppercase tracking-wider rounded-full shadow-lg hover:shadow-xl transition-all duration-300 overflow-hidden group"
+                    >
+                        <span className="relative z-10 flex items-center gap-2">
+                            Connect on YouInSports
+                            <ArrowRight size={12} className="group-hover:translate-x-1 transition-transform" />
+                        </span>
+                        <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                    </motion.button>
                 </motion.div>
 
             </div>
