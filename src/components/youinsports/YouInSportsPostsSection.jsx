@@ -153,7 +153,7 @@ const YouInSportsPostsSection = () => {
                         <div className="absolute inset-0 pointer-events-none flex items-center justify-between px-4 md:px-12 z-50">
                             <button
                                 onClick={handlePrev}
-                                className="pointer-events-auto p-3 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm transition-all hover:scale-110 group"
+                                className="pointer-events-auto p-3 rounded-full bg-transparent md:bg-white/10 md:hover:bg-white/20 text-white backdrop-blur-sm transition-all hover:scale-110 group"
                                 aria-label="Previous Post"
                             >
                                 <ChevronLeft size={32} className="group-hover:-translate-x-1 transition-transform" />
@@ -161,7 +161,7 @@ const YouInSportsPostsSection = () => {
 
                             <button
                                 onClick={handleNext}
-                                className="pointer-events-auto p-3 rounded-full bg-white/10 hover:bg-white/20 text-white backdrop-blur-sm transition-all hover:scale-110 group"
+                                className="pointer-events-auto p-3 rounded-full bg-transparent md:bg-white/10 md:hover:bg-white/20 text-white backdrop-blur-sm transition-all hover:scale-110 group"
                                 aria-label="Next Post"
                             >
                                 <ChevronRight size={32} className="group-hover:translate-x-1 transition-transform" />
